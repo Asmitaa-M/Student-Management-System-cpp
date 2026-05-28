@@ -14,7 +14,6 @@ private:
 
 public:
 
-    // Safe Integer Input
     int safeIntInput() {
         int value;
 
@@ -33,7 +32,6 @@ public:
         }
     }
 
-    // Safe Float Input
     float safeFloatInput() {
         float value;
 
@@ -52,7 +50,6 @@ public:
         }
     }
 
-    // Input Student Details
     void input() {
 
         cout << "\nEnter Roll Number: ";
@@ -67,7 +64,6 @@ public:
         marks = safeFloatInput();
     }
 
-    // Display Student Details
     void display() const {
 
         cout << left << setw(10) << rollNo
@@ -75,12 +71,11 @@ public:
              << setw(10) << marks << endl;
     }
 
-    // Getter
     int getRollNo() const {
         return rollNo;
     }
 
-    // Update Student Details
+    
     void update() {
 
         cin.ignore();
@@ -93,7 +88,6 @@ public:
     }
 };
 
-// Add Student
 void addStudent() {
 
     Student s;
@@ -114,7 +108,6 @@ void addStudent() {
     cout << "\nStudent Record Added Successfully!\n";
 }
 
-// Display All Students
 void displayStudents() {
 
     Student s;
@@ -140,7 +133,6 @@ void displayStudents() {
     file.close();
 }
 
-// Search Student
 void searchStudent() {
 
     Student s;
@@ -193,7 +185,6 @@ void searchStudent() {
     }
 }
 
-// Update Student
 void updateStudent() {
 
     Student s;
@@ -247,7 +238,6 @@ void updateStudent() {
     }
 }
 
-// Delete Student
 void deleteStudent() {
 
     Student s;
@@ -298,7 +288,6 @@ void deleteStudent() {
     }
 }
 
-// Main Function
 int main() {
 
     int choice;
